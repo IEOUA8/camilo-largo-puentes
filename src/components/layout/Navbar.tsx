@@ -28,15 +28,15 @@ export default function Navbar() {
         scrolled ? "shadow-sm border-b border-gris-suave" : "shadow-none"
       }`}
     >
-      <nav className="max-w-7xl mx-auto px-6 lg:px-8 h-28 flex items-center justify-between">
-        {/* Logo */}
+      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 lg:h-28 flex items-center justify-between">
+        {/* Logo — más pequeño en móvil */}
         <Link href="/" className="flex items-center shrink-0">
           <Image
             src="/logo-header.png"
             alt="Camilo Largo Puentes – Soluciones Inmobiliarias Integrales"
             width={420}
             height={138}
-            className="h-20 w-auto object-contain"
+            className="h-12 sm:h-14 lg:h-20 w-auto object-contain"
             priority
           />
         </Link>
@@ -59,7 +59,7 @@ export default function Navbar() {
         </div>
 
         {/* CTA + Mobile toggle */}
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-3">
           <Link
             href="/contacto"
             className="hidden lg:inline-flex font-sans text-sm font-semibold bg-dorado text-white px-5 py-2.5 rounded-sm hover:bg-dorado-hover transition-colors tracking-wide"
@@ -72,7 +72,7 @@ export default function Navbar() {
             className="lg:hidden p-2 text-azul"
             aria-label="Menú"
           >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
+            {isOpen ? <X size={22} /> : <Menu size={22} />}
           </button>
         </div>
       </nav>
@@ -80,15 +80,15 @@ export default function Navbar() {
       {/* Mobile menu */}
       {isOpen && (
         <div className="lg:hidden bg-white border-t border-gris-suave shadow-lg">
-          <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col gap-4">
+          <div className="px-4 sm:px-6 py-5 flex flex-col gap-1">
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className={`font-sans text-base font-medium transition-colors py-1 ${
+                className={`font-sans text-base font-medium transition-colors py-3 border-b border-gris-suave/60 last:border-0 ${
                   pathname === link.href
                     ? "text-azul"
-                    : "text-gris-texto hover:text-azul"
+                    : "text-gris-texto"
                 }`}
               >
                 {link.label}
@@ -96,7 +96,7 @@ export default function Navbar() {
             ))}
             <Link
               href="/contacto"
-              className="mt-2 font-sans text-sm font-semibold bg-dorado text-white px-5 py-3 rounded-sm text-center hover:bg-dorado-hover transition-colors"
+              className="mt-4 font-sans text-sm font-semibold bg-dorado text-white px-5 py-3.5 rounded-sm text-center hover:bg-dorado-hover transition-colors"
             >
               Solicitar asesoría
             </Link>

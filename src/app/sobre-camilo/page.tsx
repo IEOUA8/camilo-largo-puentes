@@ -51,12 +51,12 @@ export default function SobreCamiloPage() {
   return (
     <>
       {/* Page header */}
-      <div className="bg-azul pt-44 pb-16">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <div className="bg-azul pt-32 sm:pt-36 lg:pt-44 pb-12 sm:pb-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="font-sans text-xs font-semibold tracking-widest uppercase text-dorado mb-3">
             Sobre el abogado
           </p>
-          <h1 className="font-serif text-4xl lg:text-5xl font-semibold text-white">
+          <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-white">
             Camilo Largo Puentes
           </h1>
           <div className="mt-4 h-[2px] w-12 bg-dorado" />
@@ -65,7 +65,7 @@ export default function SobreCamiloPage() {
 
       {/* Bio + credentials */}
       <section className="py-20 lg:py-28 bg-gris-suave">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             {/* Left: bio */}
             <div>

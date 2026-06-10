@@ -40,12 +40,12 @@ export default function ContactoPage() {
   return (
     <>
       {/* Page header */}
-      <div className="bg-azul pt-44 pb-16">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <div className="bg-azul pt-32 sm:pt-36 lg:pt-44 pb-12 sm:pb-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="font-sans text-xs font-semibold tracking-widest uppercase text-dorado mb-3">
             Estamos aquí para ayudarle
           </p>
-          <h1 className="font-serif text-4xl lg:text-5xl font-semibold text-white">
+          <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-white">
             Contáctenos
           </h1>
           <p className="font-sans text-base text-white/70 mt-4 max-w-xl leading-relaxed">
@@ -57,11 +57,11 @@ export default function ContactoPage() {
       </div>
 
       <section className="py-20 bg-crema">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid lg:grid-cols-5 gap-12 lg:gap-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-5 gap-8 lg:gap-16">
             {/* Left: form */}
             <div className="lg:col-span-3">
-              <div className="bg-white border border-gris-suave rounded-sm p-8">
+              <div className="bg-white border border-gris-suave rounded-sm p-5 sm:p-8">
                 <h2 className="font-serif text-2xl font-semibold text-azul mb-2">
                   Solicitar asesoría
                 </h2>

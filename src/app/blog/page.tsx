@@ -23,12 +23,12 @@ export default function BlogPage() {
   return (
     <>
       {/* Page header */}
-      <div className="bg-azul pt-44 pb-16">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <div className="bg-azul pt-32 sm:pt-36 lg:pt-44 pb-12 sm:pb-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="font-sans text-xs font-semibold tracking-widest uppercase text-dorado mb-3">
             Conocimiento especializado
           </p>
-          <h1 className="font-serif text-4xl lg:text-5xl font-semibold text-white">
+          <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-white">
             Blog y artículos
           </h1>
           <p className="font-sans text-base text-white/70 mt-4 max-w-xl leading-relaxed">
@@ -40,7 +40,7 @@ export default function BlogPage() {
       </div>
 
       <section className="py-20 bg-crema">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Categories filter */}
           <div className="flex flex-wrap gap-2 mb-12">
             {CATEGORIAS.map((cat) => (

@@ -6,10 +6,10 @@ import { NAV_LINKS, CORREO_CONTACTO, TELEFONO, CIUDAD, SERVICIOS } from "@/lib/c
 export default function Footer() {
   return (
     <footer className="bg-azul text-white">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 pt-16 pb-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-14 sm:pt-16 pb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10 mb-10 sm:mb-12">
           {/* Brand */}
-          <div className="lg:col-span-1">
+          <div className="sm:col-span-2 lg:col-span-1">
             <div className="mb-5">
               <Link href="/" className="inline-block">
                 <Image
@@ -17,12 +17,12 @@ export default function Footer() {
                   alt="Camilo Largo Puentes"
                   width={380}
                   height={125}
-                  className="h-20 w-auto object-contain"
+                  className="h-14 sm:h-16 lg:h-20 w-auto object-contain max-w-[260px] sm:max-w-none"
                   style={{ filter: "brightness(0) invert(1)" }}
                 />
               </Link>
             </div>
-            <p className="font-sans text-sm text-white/70 leading-relaxed">
+            <p className="font-sans text-sm text-white/70 leading-relaxed max-w-xs">
               Asesoría jurídica y técnica en soluciones inmobiliarias integrales,
               derecho urbanístico, derecho ambiental, avalúos y gestión territorial.
             </p>
@@ -79,10 +79,10 @@ export default function Footer() {
               <li>
                 <a
                   href={`mailto:${CORREO_CONTACTO}`}
-                  className="flex items-center gap-2.5 text-white/70 hover:text-white transition-colors"
+                  className="flex items-start gap-2.5 text-white/70 hover:text-white transition-colors"
                 >
-                  <Mail size={14} className="shrink-0 text-dorado" />
-                  <span className="font-sans text-sm">{CORREO_CONTACTO}</span>
+                  <Mail size={14} className="mt-0.5 shrink-0 text-dorado" />
+                  <span className="font-sans text-sm break-all">{CORREO_CONTACTO}</span>
                 </a>
               </li>
               <li>
@@ -108,8 +108,8 @@ export default function Footer() {
         </div>
 
         {/* Divider */}
-        <div className="border-t border-white/10 pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="font-sans text-xs text-white/40">
+        <div className="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
+          <p className="font-sans text-xs text-white/40 text-center sm:text-left">
             © {new Date().getFullYear()} Camilo Largo Puentes. Todos los derechos reservados.
           </p>
           <div className="flex items-center gap-4">

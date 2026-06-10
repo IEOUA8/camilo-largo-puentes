@@ -25,7 +25,7 @@ export default function CTABanner({
         <div className="absolute top-0 right-0 w-16 h-16 border border-white/10 rounded-full translate-x-8 -translate-y-8" />
       </div>
 
-      <div className="relative max-w-4xl mx-auto px-6 lg:px-8 text-center">
+      <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <motion.p
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -40,7 +40,7 @@ export default function CTABanner({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.1 }}
-          className="font-serif text-4xl lg:text-5xl font-semibold text-white leading-tight mb-5"
+          className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-5"
         >
           {title}
         </motion.h2>
