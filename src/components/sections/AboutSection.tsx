@@ -131,7 +131,7 @@ export default function AboutSection({ preview = false }: { preview?: boolean })
               })}
             </div>
 
-            {/* Quote */}
+            {/* Principio profesional */}
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -139,12 +139,15 @@ export default function AboutSection({ preview = false }: { preview?: boolean })
               transition={{ delay: 0.5 }}
               className="mt-4 p-5 border-l-2 border-dorado bg-white"
             >
-              <p className="font-serif text-base italic text-gris-texto/70 leading-relaxed">
-                "La seguridad jurídica en el territorio es el fundamento de
-                cualquier inversión exitosa."
+              <p className="font-sans text-[10px] font-semibold tracking-widest uppercase text-dorado mb-2">
+                Principio profesional
               </p>
-              <p className="font-sans text-xs text-dorado font-medium mt-2 tracking-wide">
-                — Camilo Largo Puentes
+              <p className="font-serif text-base text-gris-texto/80 leading-relaxed">
+                La seguridad jurídica en el territorio es el fundamento de
+                cualquier inversión exitosa.
+              </p>
+              <p className="font-sans text-xs text-gris-texto/45 font-medium mt-2">
+                Camilo Largo Puentes · Abogado Especialista
               </p>
             </motion.div>
           </motion.div>

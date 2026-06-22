@@ -36,7 +36,7 @@ export default function Navbar() {
             alt="Camilo Largo Puentes – Soluciones Inmobiliarias Integrales"
             width={420}
             height={138}
-            className="h-12 sm:h-14 lg:h-20 w-auto object-contain"
+            className="h-14 sm:h-16 lg:h-24 w-auto object-contain"
             priority
           />
         </Link>
@@ -64,7 +64,7 @@ export default function Navbar() {
             href="/contacto"
             className="hidden lg:inline-flex font-sans text-sm font-semibold bg-dorado text-white px-5 py-2.5 rounded-sm hover:bg-dorado-hover transition-colors tracking-wide"
           >
-            Solicitar asesoría
+            Solicitar asesoría o cotización
           </Link>
 
           <button
@@ -98,7 +98,7 @@ export default function Navbar() {
               href="/contacto"
               className="mt-4 font-sans text-sm font-semibold bg-dorado text-white px-5 py-3.5 rounded-sm text-center hover:bg-dorado-hover transition-colors"
             >
-              Solicitar asesoría
+              Solicitar asesoría o cotización
             </Link>
           </div>
         </div>

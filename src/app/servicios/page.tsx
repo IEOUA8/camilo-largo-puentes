@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import ServicesGrid from "@/components/sections/ServicesGrid";
 import CTABanner from "@/components/sections/CTABanner";
 import ProcessSection from "@/components/sections/ProcessSection";
 import { SERVICIOS } from "@/lib/constants";
-import { Building2, Leaf, BarChart3, Map, Home } from "lucide-react";
+import { Building2, Leaf, BarChart3, Map, Home, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Servicios | Camilo Largo Puentes",
   description:
-    "Servicios especializados en derecho urbanístico, derecho ambiental, avalúos, gestión territorial y consultoría inmobiliaria integral.",
+    "Servicios especializados en derecho urbanístico, derecho ambiental, avalúos (RAA·ANA), gestión territorial y consultoría inmobiliaria integral.",
 };
 
 const ICONOS = { building: Building2, leaf: Leaf, scale: BarChart3, map: Map, home: Home };
@@ -90,9 +91,30 @@ export default function ServiciosPage() {
 
       <ProcessSection />
 
+      {/* Enlace al catálogo de avalúos */}
+      <section className="py-10 bg-dorado/5 border-t border-dorado/20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div>
+            <p className="font-sans text-xs font-semibold tracking-widest uppercase text-dorado mb-1">
+              Catálogo completo
+            </p>
+            <p className="font-serif text-xl font-semibold text-azul">
+              Explore todas las categorías de avalúo (RAA · ANA)
+            </p>
+          </div>
+          <Link
+            href="/avaluos"
+            className="inline-flex items-center gap-2 font-sans text-sm font-semibold bg-dorado text-white px-6 py-3 rounded-sm hover:bg-dorado-hover transition-colors whitespace-nowrap group"
+          >
+            Ver catálogo de avalúos
+            <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+          </Link>
+        </div>
+      </section>
+
       <CTABanner
         title="¿En qué servicio podemos ayudarle?"
-        subtitle="Contáctenos y le orientaremos sobre la ruta jurídica y técnica más adecuada para su caso."
+        subtitle="Contáctenos y le orientaremos sobre la ruta jurídica, técnica o de valoración más adecuada para su caso."
       />
     </>
   );

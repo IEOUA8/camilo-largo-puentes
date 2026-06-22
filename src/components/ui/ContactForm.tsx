@@ -18,7 +18,11 @@ type FormData = {
 const SERVICIOS_OPCIONES = [
   "Derecho Urbanístico",
   "Derecho Ambiental",
-  "Avalúos y Valoración",
+  "Avalúo Comercial de Inmuebles",
+  "Avalúo de Maquinaria y Equipos",
+  "Avalúo de Vehículos",
+  "Avalúo de Activos Intangibles (Marcas, Patentes)",
+  "Peritaje Judicial — Daños y Perjuicios",
   "Gestión Territorial",
   "Consultoría Inmobiliaria",
   "Otro",
@@ -301,7 +305,7 @@ export default function ContactForm() {
           </>
         ) : (
           <>
-            Solicitar asesoría
+            Solicitar asesoría o cotización
             <Send size={14} />
           </>
         )}

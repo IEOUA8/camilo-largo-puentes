@@ -66,7 +66,7 @@ export default function CTABanner({
             href="/contacto"
             className="inline-flex items-center justify-center gap-2 font-sans font-semibold text-sm bg-dorado text-white px-8 py-4 rounded-sm hover:bg-dorado-hover transition-colors tracking-wide group"
           >
-            Solicitar asesoría
+            Solicitar asesoría o cotización
             <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
           </Link>
 

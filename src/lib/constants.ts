@@ -33,16 +33,17 @@ export const SERVICIOS = [
   },
   {
     id: "avaluos",
-    titulo: "Avalúos y Valoración",
+    titulo: "Avalúos y Valoración de Bienes",
     descripcion:
-      "Apoyo técnico en valoración de bienes inmuebles para decisiones patrimoniales, comerciales, jurídicas e inmobiliarias.",
+      "Servicios técnicos de avalúo certificados bajo el Registro Abierto de Avaluadores (RAA) de la Asociación Nacional de Avaluadores (ANA). Cobertura de inmuebles, maquinaria, vehículos, recursos naturales, activos intangibles y peritajes judiciales.",
     subservicios: [
-      "Avalúos comerciales",
-      "Valoración de inmuebles",
-      "Análisis patrimonial",
-      "Avalúos para procesos jurídicos",
-      "Estudios de valor de mercado",
-      "Conceptos técnicos",
+      "Bienes inmuebles urbanos (casas, aptos, locales, bodegas)",
+      "Predios rurales y fincas",
+      "Maquinaria y equipo industrial",
+      "Vehículos automotores",
+      "Recursos naturales y activos ambientales",
+      "Activos intangibles — marcas, patentes y franquicias",
+      "Peritajes judiciales — daños y perjuicios",
     ],
     icono: "scale",
     color: "dorado",
@@ -81,6 +82,103 @@ export const SERVICIOS = [
   },
 ] as const;
 
+export const AVALUOS_CATEGORIAS = [
+  {
+    id: "inmuebles-urbanos",
+    titulo: "Bienes Inmuebles Urbanos",
+    descripcion:
+      "Valoración técnica de inmuebles en zonas urbanas para cualquier propósito jurídico, comercial o patrimonial.",
+    items: [
+      "Apartamentos y casas de habitación",
+      "Locales comerciales y consultorios",
+      "Oficinas y centros empresariales",
+      "Bodegas e inmuebles industriales",
+      "Lotes urbanos y urbanizables",
+      "Edificios y propiedad horizontal",
+      "Centros comerciales",
+    ],
+  },
+  {
+    id: "inmuebles-rurales",
+    titulo: "Bienes Inmuebles Rurales",
+    descripcion:
+      "Avalúos de predios agrícolas, agropecuarios, forestales y de uso mixto en zonas rurales.",
+    items: [
+      "Predios rurales y agropecuarios",
+      "Fincas de recreo y haciendas",
+      "Lotes rurales y parcelaciones",
+      "Terrenos de uso forestal",
+      "Mejoras, cultivos y plantaciones",
+    ],
+  },
+  {
+    id: "maquinaria",
+    titulo: "Maquinaria y Equipo",
+    descripcion:
+      "Valoración de maquinaria industrial, equipos especializados e instalaciones productivas.",
+    items: [
+      "Maquinaria industrial y de producción",
+      "Equipos médicos y hospitalarios",
+      "Equipos tecnológicos y de cómputo",
+      "Herramientas y equipos especializados",
+      "Plantas y líneas de producción",
+    ],
+  },
+  {
+    id: "vehiculos",
+    titulo: "Vehículos Automotores",
+    descripcion:
+      "Avalúo de toda clase de vehículos: particulares, comerciales, de carga y maquinaria vial.",
+    items: [
+      "Vehículos particulares",
+      "Vehículos comerciales y de carga",
+      "Motocicletas",
+      "Maquinaria vial y de construcción",
+      "Maquinaria agrícola",
+      "Flota vehicular empresarial",
+    ],
+  },
+  {
+    id: "recursos-naturales",
+    titulo: "Recursos Naturales y Medio Ambiente",
+    descripcion:
+      "Valoración de activos ambientales, recursos naturales y cuantificación de daño ecológico.",
+    items: [
+      "Recursos hídricos y fuentes de agua",
+      "Recursos forestales y maderables",
+      "Activos ambientales y servicios ecosistémicos",
+      "Reservas naturales y áreas de conservación",
+      "Valoración de daño ambiental",
+    ],
+  },
+  {
+    id: "intangibles",
+    titulo: "Activos Intangibles",
+    descripcion:
+      "Valoración de marcas, patentes, franquicias y otros activos de conocimiento e innovación.",
+    items: [
+      "Marcas y nombres comerciales",
+      "Patentes e inventos",
+      "Franquicias y licencias",
+      "Software y propiedad intelectual",
+      "Goodwill empresarial",
+    ],
+  },
+  {
+    id: "peritajes",
+    titulo: "Peritajes Judiciales",
+    descripcion:
+      "Dictámenes técnicos especializados para procesos judiciales, arbitrales y administrativos.",
+    items: [
+      "Daños y perjuicios patrimoniales",
+      "Lucro cesante y daño emergente",
+      "Perjuicios por afectación de inmuebles",
+      "Dictámenes técnicos para litigios",
+      "Conceptos de valor para procesos judiciales",
+    ],
+  },
+] as const;
+
 export const PROCESO_PASOS = [
   {
     numero: "01",
@@ -116,18 +214,26 @@ export const PROCESO_PASOS = [
 
 export const NAV_LINKS = [
   { href: "/", label: "Inicio" },
-  { href: "/sobre-camilo", label: "Sobre Camilo" },
+  { href: "/sobre-camilo", label: "Trayectoria" },
   { href: "/servicios", label: "Servicios" },
+  { href: "/avaluos", label: "Avalúos" },
   { href: "/blog", label: "Blog" },
   { href: "/contacto", label: "Contacto" },
 ] as const;
 
-export const WHATSAPP_NUMBER = "573000000000";
+export const WHATSAPP_NUMBER = "573000000000"; // TODO: Actualizar con número real
 export const WHATSAPP_MESSAGE =
   "Hola Camilo, me gustaría solicitar una asesoría.";
-export const CORREO_CONTACTO = "contacto@camilolargo.com";
-export const TELEFONO = "+57 300 000 0000";
-export const CIUDAD = "Colombia";
+export const CORREO_CONTACTO = "contacto@camilolargo.com"; // TODO: Actualizar
+export const TELEFONO = "+57 300 000 0000"; // TODO: Actualizar con número real
+export const CIUDAD = "Bogotá D.C., Colombia";
+export const DIRECCION_OFICINA = "Bogotá D.C., Colombia"; // TODO: Agregar dirección exacta de oficina
+
+// TODO: Reemplazar con la URL de embed real — obtener desde Google Maps > Compartir > Insertar un mapa
+export const GOOGLE_MAPS_EMBED_URL =
+  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127395.59!2d-74.1990!3d4.6097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2sBogot%C3%A1%2C+Colombia!5e0!3m2!1ses!2sco!4v1700000000000";
+export const GOOGLE_MAPS_LINK =
+  "https://maps.google.com/?q=Bogota,Colombia"; // TODO: Actualizar con enlace a ubicación exacta
 
 export const BLOG_ARTICULOS = [
   {
